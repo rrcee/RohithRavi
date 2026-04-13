@@ -1,16 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <title>Rohith Ravi Photography </title>
-    
-
-  </head>
-    
-  <body>
-  <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +21,6 @@
         
         .font-serif { font-family: 'Playfair Display', serif; }
         
-        /* Hide scrollbar for horizontal scrolling areas */
         .hide-scrollbar::-webkit-scrollbar { display: none; }
         .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
         
@@ -67,15 +55,18 @@
             visibility: visible;
             pointer-events: auto;
         }
+
+        /* Line animations for burger */
+        .line-transition { transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
     </style>
 </head>
 <body class="antialiased selection:bg-white selection:text-black">
 
     <audio id="bg-audio" src="audio.mp3" loop></audio>
 
-    <button id="menu-btn" class="fixed top-6 right-6 z-50 flex flex-col justify-center items-center w-12 h-12 bg-black/20 backdrop-blur-md rounded-full border border-white/20 text-white overflow-hidden transition-all cursor-pointer hover:bg-black/40" aria-label="Menu">
-        <span id="line1" class="h-0.5 w-6 bg-white transition-all duration-300 -translate-y-1"></span>
-        <span id="line2" class="h-0.5 w-6 bg-white transition-all duration-300 translate-y-1"></span>
+    <button id="menu-btn" class="fixed top-6 right-6 z-50 flex flex-col justify-center items-center w-12 h-12 bg-black/20 backdrop-blur-md rounded-full border border-white/20 text-white overflow-hidden cursor-pointer hover:bg-black/40" aria-label="Menu">
+        <span id="line1" class="h-0.5 w-6 bg-white line-transition -translate-y-1"></span>
+        <span id="line2" class="h-0.5 w-6 bg-white line-transition translate-y-1"></span>
     </button>
 
     <nav id="mobile-menu" class="fixed inset-0 z-40 bg-black text-white flex flex-col justify-center items-center">
@@ -106,7 +97,7 @@
             <h2 class="text-4xl md:text-6xl font-light tracking-tighter leading-tight gs-fade-up">Reliable.<br>Timeless.<br>Honest storytelling.</h2>
             
             <div class="polaroid w-[280px] md:w-[320px] transition-transform duration-500 hover:scale-[1.02] gs-fade-up">
-                <img src="rohith.jpg" alt="Rohith Ravi" class="polaroid-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22320%22%20height%3D%22320%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%22320%22%20height%3D%22320%22%20fill%3D%22%23e5e7eb%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%239ca3af%22%20alignment-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%3Erohith.jpg%3C%2Ftext%3E%3C%2Fsvg%3E'">
+                <img src="rohith.jpg" alt="Rohith Ravi" class="polaroid-img">
                 <div class="font-serif text-2xl tracking-tight leading-none">Rohith Ravi</div>
             </div>
 
@@ -132,7 +123,7 @@
                 <p class="text-xl md:text-3xl font-medium tracking-tight">Crafting films that feel larger than memory.<br><span class="opacity-70">Across India. Beyond expectations.</span></p>
                 
                 <div class="polaroid w-[260px] md:w-[300px] transition-transform duration-500 hover:scale-[1.02] -rotate-2 mt-10">
-                    <img src="MTLC.jpg" alt="MTLC" class="polaroid-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22320%22%20height%3D%22320%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%22320%22%20height%3D%22320%22%20fill%3D%22%23e5e7eb%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%239ca3af%22%20alignment-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%3EMTLC.jpg%3C%2Ftext%3E%3C%2Fsvg%3E'">
+                    <img src="mtlc.jpg" alt="MTLC" class="polaroid-img">
                     <div class="font-serif text-2xl tracking-tight leading-none">more than</div>
                     <div class="text-black/60 text-xs mt-2 uppercase tracking-widest">a little crazy</div>
                 </div>
@@ -150,7 +141,7 @@
                 <p class="text-xl md:text-3xl font-light tracking-tight">Artistic weddings rooted in Kerala.<br><span class="opacity-70">Every detail, every emotion.</span></p>
 
                 <div class="polaroid w-[260px] md:w-[300px] transition-transform duration-500 hover:scale-[1.02] rotate-2 mt-10">
-                    <img src="u4u.jpg" alt="U4U" class="polaroid-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22320%22%20height%3D%22320%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%22320%22%20height%3D%22320%22%20fill%3D%22%23e5e7eb%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%239ca3af%22%20alignment-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%3Eu4u.jpg%3C%2Ftext%3E%3C%2Fsvg%3E'">
+                    <img src="u4u.jpg" alt="U4U" class="polaroid-img">
                     <div class="font-serif text-2xl tracking-tight leading-none text-black">u4u</div>
                 </div>
             </div>
@@ -174,38 +165,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     
     <script>
-        // YT Player API
         let player;
         const bgAudio = document.getElementById('bg-audio');
 
         function onYouTubeIframeAPIReady() {
             player = new YT.Player('youtube-player', {
                 videoId: '2BlPuiV8pLY',
-                playerVars: {
-                    'autoplay': 1,
-                    'mute': 1,
-                    'loop': 1,
-                    'playlist': '2BlPuiV8pLY',
-                    'controls': 0,
-                    'showinfo': 0,
-                    'rel': 0,
-                    'playsinline': 1
-                },
-                events: {
-                    'onReady': onPlayerReady
-                }
+                playerVars: { 'autoplay': 1, 'mute': 1, 'loop': 1, 'playlist': '2BlPuiV8pLY', 'controls': 0, 'showinfo': 0, 'rel': 0, 'playsinline': 1 },
+                events: { 'onReady': onPlayerReady }
             });
         }
 
         function onPlayerReady(event) {
             event.target.playVideo();
-            // Start audio on first interaction due to browser policies
-            document.body.addEventListener('click', () => {
-                bgAudio.play().catch(e => console.log("Audio play blocked"));
-            }, { once: true });
+            document.body.addEventListener('click', () => { bgAudio.play().catch(e => {}); }, { once: true });
         }
 
-        // Reel Data
         const mtlcReels = ["https://www.instagram.com/reel/DU8He_6Ehhj/embed", "https://www.instagram.com/reel/DUInTBhkynu/embed", "https://www.instagram.com/reel/DSfFjkjE7zk/embed", "https://www.instagram.com/reel/DEaEifMzS_P/embed"];
         const u4uReels = ["https://www.instagram.com/reel/CYeJolVI7Vi/embed", "https://www.instagram.com/reel/Cr3H3TGr0Ul/embed", "https://www.instagram.com/reel/DWbeWVEEqhx/embed"];
 
@@ -220,39 +195,24 @@
         renderCarousel('mtlc-reels', mtlcReels);
         renderCarousel('u4u-reels-carousel', u4uReels);
 
-        // Smooth Scroll
         const lenis = new Lenis({ duration: 1.2, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)) });
         function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
         requestAnimationFrame(raf);
 
         gsap.registerPlugin(ScrollTrigger);
 
-        // Landing Section Observer (Play/Reset logic)
         ScrollTrigger.create({
             trigger: "#landing",
             start: "top top",
             end: "bottom top",
-            onEnter: () => {
-                if(player && player.playVideo) player.playVideo();
-                bgAudio.play();
-            },
-            onLeave: () => {
-                if(player && player.pauseVideo) player.pauseVideo();
-                bgAudio.pause();
-                bgAudio.currentTime = 0; // Reset to beginning
-                if(player && player.seekTo) player.seekTo(0);
-            },
-            onEnterBack: () => {
-                if(player && player.playVideo) player.playVideo();
-                bgAudio.play();
-            }
+            onEnter: () => { if(player && player.playVideo) player.playVideo(); bgAudio.play(); },
+            onLeave: () => { if(player && player.pauseVideo) player.pauseVideo(); bgAudio.pause(); bgAudio.currentTime = 0; if(player && player.seekTo) player.seekTo(0); },
+            onEnterBack: () => { if(player && player.playVideo) player.playVideo(); bgAudio.play(); }
         });
 
-        // Basic Animations
         gsap.from('.gs-reveal', { opacity: 0, y: 30, duration: 1.5, delay: 0.5 });
         gsap.utils.toArray('.gs-fade-up').forEach(el => gsap.from(el, { scrollTrigger: { trigger: el, start: "top 90%" }, y: 50, opacity: 0, duration: 1 }));
 
-        // Fluid Menu Toggle Logic
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         const line1 = document.getElementById('line1');
@@ -260,45 +220,28 @@
 
         menuBtn.addEventListener('click', () => {
             const isOpen = mobileMenu.classList.toggle('open');
-            
             if(isOpen) {
-                // Animate hamburger to X
-                line1.classList.add('rotate-45', 'translate-y-1');
-                line1.classList.remove('-translate-y-1');
-                line2.classList.add('-rotate-45', '-translate-y-0.5');
-                line2.classList.remove('translate-y-1');
-                
-                gsap.to('.gs-nav-item', { opacity: 1, y: 0, stagger: 0.1, delay: 0.3, duration: 0.5, ease: "power2.out" });
+                line1.style.transform = "translateY(0) rotate(45deg)";
+                line2.style.transform = "translateY(0) rotate(-45deg)";
+                gsap.to('.gs-nav-item', { opacity: 1, y: 0, stagger: 0.1, delay: 0.3, duration: 0.6, ease: "power3.out" });
                 lenis.stop();
             } else {
-                // Animate X back to hamburger
-                line1.classList.remove('rotate-45', 'translate-y-1');
-                line1.classList.add('-translate-y-1');
-                line2.classList.remove('-rotate-45', '-translate-y-0.5');
-                line2.classList.add('translate-y-1');
-                
-                gsap.to('.gs-nav-item', { opacity: 0, y: 8, duration: 0.3, ease: "power2.in" });
+                line1.style.transform = "translateY(-4px) rotate(0deg)";
+                line2.style.transform = "translateY(4px) rotate(0deg)";
+                gsap.to('.gs-nav-item', { opacity: 0, y: 15, duration: 0.4, ease: "power3.in" });
                 lenis.start();
             }
         });
 
-        // Close menu on link click smoothly
         document.querySelectorAll('.menu-link, .whatsapp-btn').forEach(link => {
             link.addEventListener('click', (e) => {
-                // Ignore if it's a whatsapp button so the WA logic handles it
                 if(link.classList.contains('whatsapp-btn')) return; 
-                
                 e.preventDefault();
-                menuBtn.click(); // close menu
-                
-                // Wait for the fluid animation to mostly finish before scrolling
-                setTimeout(() => {
-                    lenis.scrollTo(link.getAttribute('href'));
-                }, 600);
+                menuBtn.click();
+                setTimeout(() => { lenis.scrollTo(link.getAttribute('href')); }, 600);
             });
         });
 
-        // Random WhatsApp Messages
         const waMessages = [
             "Hi Rohith! I'd like to check your availability for my wedding. Could we discuss the details and possible dates? I’m really excited to hear from you!",
             "Hello Rohith! We absolutely love your work and would love to know if you're available for our upcoming wedding.",
@@ -311,19 +254,10 @@
             btn.addEventListener('click', (e) => {
                 e.preventDefault();
                 const randomMsg = waMessages[Math.floor(Math.random() * waMessages.length)];
-                const encodedMsg = encodeURIComponent(randomMsg);
-                window.open(`https://wa.me/919745978666?text=${encodedMsg}`, '_blank');
-                
-                // If it was clicked inside the mobile menu, trigger the fluid close
-                if (btn.closest('#mobile-menu')) {
-                    menuBtn.click();
-                }
+                window.open(`https://wa.me/919745978666?text=${encodeURIComponent(randomMsg)}`, '_blank');
+                if (btn.closest('#mobile-menu')) menuBtn.click();
             });
         });
     </script>
 </body>
-</html>
-    
-  </body>
-  
 </html>
